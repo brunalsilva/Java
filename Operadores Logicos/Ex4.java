@@ -4,6 +4,9 @@ import java.util.Scanner;
 public class Ex4 {
 	public static void main(String[] args) {
 		
+		/*Escreva um sistema que leia três números inteiros e positivos (A, B, C) e
+		calcule a seguinte expressão: D=(R+S)/2, onde R=(A+B)² e S=(B+C)² */
+		
 		Scanner leia = new Scanner(System.in);
 		
 		System.out.println("Dê um valor para A: ");

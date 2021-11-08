@@ -5,6 +5,9 @@ import java.util.Scanner;
 public class Ex7 {
 	public static void main(String[] args) {
 		
+		/*Um sistema de equações lineares do tipo: ax+by=c e dx+ey=f, pode ser resolvido segundo mostrado abaixo:
+		x=ce-bf/ae-bd e y=af-cd/ae-bd*/
+		
 		Scanner leia = new Scanner(System.in);
 		
 		int a,b,c,d,e,f,x,y;
