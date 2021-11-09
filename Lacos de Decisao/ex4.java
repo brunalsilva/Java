@@ -10,18 +10,21 @@ public class ex4 {
 		
 	Scanner leia = new Scanner(System.in);
 	
-	double x;
+	int x;
+	double res;
 	
 	System.out.println("Digite um número: ");
-	x = leia.nextDouble();
+	x = leia.nextInt();
 	
 	if(x%2==0)
 	{
-		System.out.println("O número digitado é par. Sua raiz quadrada é: " + Math.sqrt(x));
+		res = Math.sqrt(x);
+		System.out.println("O número digitado é par. Sua raiz quadrada é: " + res);
 	}
 	else
 	{
-		System.out.println("O número digitado é ímpar. O número elevado ao quadrado tem o valor: " + Math.pow(x, 2));
+		res =  Math.pow(x, 2);
+		System.out.println("O número digitado é ímpar. O número elevado ao quadrado tem o valor: " + res);
 	}
 	
 	}
