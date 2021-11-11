@@ -84,7 +84,7 @@ public class ex4 {
 		if(op==3)
 		{
 			System.out.println("Digite o valor da constante: ");
-			n = leia.nextInt();
+			n = leia.nextDouble();
 			
 			for(l=0;l<2;l++)
 			{
