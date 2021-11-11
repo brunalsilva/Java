@@ -57,7 +57,7 @@ public class ex4 {
 					System.out.printf(" %.2f",C[l][c]," \n ");
                 }
 				System.out.println();
-				}
+			}
 		}
 	
 		if(op==2)
@@ -77,7 +77,7 @@ public class ex4 {
 					System.out.printf(" %.2f",C[l][c]," \n ");
                 }
 				System.out.println();
-				}
+			}
 		}
 		
 		if(op==3)
