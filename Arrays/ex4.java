@@ -16,14 +16,15 @@ public class ex4 {
 		double [][] A = new double [2][2];
 		double [][] B = new double [2][2];
 		double [][] C = new double [2][2];
-		int l,c,op,n;
+		int l,c,op;
+		double n;
 		
 		for(l=0;l<2;l++)
 		{
 			for(c=0;c<2;c++)
 			{
 				System.out.println("Digite um número: ");
-				A[l][c]= leia.nextInt();
+				A[l][c]= leia.nextDouble();
 			}
 		}
 		
@@ -32,11 +33,11 @@ public class ex4 {
 			for(c=0;c<2;c++)
 			{
 				System.out.println("Digite um número: ");
-				B[l][c]= leia.nextInt();
+				B[l][c]= leia.nextDouble();
 			}
 		}
 		
-		System.out.println("Escolha uma opção: \n1-Somar as duas matrizes \n2-Subtrair a primeira matriz da segunda \n3-Adicionar uma constante às duas matrizes \n4-Imprimir as matrizes");
+		System.out.println("Escolha uma opção: \n1- Somar as duas matrizes \n2- Subtrair a primeira matriz da segunda \n3- Adicionar uma constante às duas matrizes \n4- Imprimir as matrizes");
 		op = leia.nextInt();
 		
 		if(op==1)
