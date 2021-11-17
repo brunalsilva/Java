@@ -5,9 +5,9 @@ public class Cachorro extends Animais {
 		private String dieta;
 		private String adestracao;
 		
-		public Cachorro(String nome, int idade, String som, String locomocao, String raca, String dieta, String adestracao)
+		public Cachorro(String nome, int idade, String raca, String dieta, String adestracao)
 		{
-			super(nome,idade,som,locomocao);
+			super(nome,idade);
 			this.raca = raca;
 			this.dieta = dieta;
 			this.adestracao = adestracao;
@@ -15,7 +15,27 @@ public class Cachorro extends Animais {
 		
 		public void imprimirInfo()
 		{
-			System.out.println("\n\t\t\tCachorro \nNome: "+getNome()+"\nIdade: "+getIdade()+"\nReproduz som? "+getSom()+"\nDeve correr? "+getLocomocao()+"\nQual a raça? "+raca+"\nQual a dieta? "+dieta+"\nÉ adestrado? "+adestracao);
+			System.out.println("\n\t\t\tCachorro \nNome: "+getNome()+"\nIdade: "+getIdade()+"\nRaça: "+raca+"\nDieta: "+dieta+"\nAdestração: "+adestracao);
+		}
+		
+		@Override
+		public void som() 
+		{
+			 System.out.println("Au au au au au!");
+		}
+
+
+		@Override
+		public void corre(Boolean corre) 
+		{
+			if (corre == true) 
+			{
+				System.out.println("Esse animal corre.");
+			}
+			else
+			{
+				System.out.println("Esse animal sobe em árvores.");
+			}
 		}
 
 		public String getRaca() {

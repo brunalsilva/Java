@@ -5,17 +5,37 @@ public class Cavalo extends Animais{
 		private String dieta;
 		private String sono;
 		
-		public Cavalo(String nome, int idade, String som, String locomocao, String corPelo, String dieta, String sono)
+		public Cavalo(String nome, int idade, String corPelo, String dieta, String sono)
 		{
-			super(nome,idade,som,locomocao);
+			super(nome,idade);
 			this.corPelo = corPelo;
 			this.dieta = dieta;
 			this.sono = sono;
 		}
 		
+		@Override
+		public void som() 
+		{
+			 System.out.println("Tuctuctuctuc!");
+		}
+
+
+		@Override
+		public void corre(Boolean corre) 
+		{
+			if (corre == true) 
+			{
+				System.out.println("Esse animal corre.");
+			}
+			else
+			{
+				System.out.println("Esse animal sobe em árvores.");
+			}
+		}
+		
 		public void imprimirInfo()
 		{
-			System.out.println("\n\t\t\tCavalo \nNome: "+getNome()+"\nIdade: "+getIdade()+"\nReproduz som? "+getSom()+"\nDeve correr? "+getLocomocao()+"\nQual a cor do pelo? "+corPelo+"\nQual a dieta? "+dieta+"\nQual o tipo de sono? "+sono);
+			System.out.println("\n\t\t\tCavalo \nNome: "+getNome()+"\nIdade: "+getIdade()+"\nQual a cor do pelo? "+corPelo+"\nQual a dieta? "+dieta+"\nQual o tipo de sono? "+sono);
 		}
 
 		public String getCorPelo() {

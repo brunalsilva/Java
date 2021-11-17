@@ -1,18 +1,18 @@
 
-public class Animais {
+public abstract class Animais {
 		
 		private String nome;
 		private int idade;
-		private String som;
-		private String locomocao;
 		
-		public Animais (String nome, int idade, String som, String locomocao)
+		public Animais (String nome, int idade)
 		{
 			this.nome = nome;
 			this.idade = idade;
-			this.som = som;
-			this.locomocao = locomocao;
 		}
+		
+		abstract public void som();
+		
+		abstract public void corre(Boolean corre);
 
 		public String getNome() {
 			return nome;
@@ -29,22 +29,5 @@ public class Animais {
 		public void setIdade(int idade) {
 			this.idade = idade;
 		}
-
-		public String getSom() {
-			return som;
-		}
-
-		public void setSom(String som) {
-			this.som = som;
-		}
-
-		public String getLocomocao() {
-			return locomocao;
-		}
-
-		public void setLocomocao(String locomocao) {
-			this.locomocao = locomocao;
-		}
-		
 		
 }
