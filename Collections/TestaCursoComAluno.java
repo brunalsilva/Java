@@ -55,7 +55,7 @@ public class TestaCursoComAluno {
             System.out.println(proximo);
         }
 
-        
+
 
     }
 }
